@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lacalization" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="putin" translatesAutoresizingMaskIntoConstraints="NO" id="gQS-vF-gb0">
+                                <rect key="frame" x="8" y="28" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="PSB-AX-wCW"/>
+                                    <constraint firstAttribute="height" constant="120" id="ydc-0e-cCh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВВП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-3T-PCU">
+                                <rect key="frame" x="215" y="78.5" width="34.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-hc-BwW">
+                                <rect key="frame" x="0.0" y="193" width="375" height="474"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7bt-hc-BwW" secondAttribute="bottom" id="9Q9-ZL-Vjy"/>
+                            <constraint firstItem="LPb-3T-PCU" firstAttribute="leading" secondItem="gQS-vF-gb0" secondAttribute="trailing" constant="87" id="Hgf-jB-aeE"/>
+                            <constraint firstAttribute="trailing" secondItem="7bt-hc-BwW" secondAttribute="trailing" id="JsG-yi-78V"/>
+                            <constraint firstItem="gQS-vF-gb0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Mox-1c-TpZ"/>
+                            <constraint firstItem="7bt-hc-BwW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WiA-p6-twr"/>
+                            <constraint firstItem="7bt-hc-BwW" firstAttribute="top" secondItem="gQS-vF-gb0" secondAttribute="bottom" constant="45" id="gU7-Al-UC6"/>
+                            <constraint firstItem="gQS-vF-gb0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="mjP-WC-fLo"/>
+                            <constraint firstItem="LPb-3T-PCU" firstAttribute="centerY" secondItem="gQS-vF-gb0" secondAttribute="centerY" id="p0d-3b-WkF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImage" destination="gQS-vF-gb0" id="N8R-bJ-WXS"/>
+                        <outlet property="tableView" destination="7bt-hc-BwW" id="Dp1-28-etP"/>
+                        <outlet property="userNameLabel" destination="p0d-3b-WkF" id="jkA-Iq-G0O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="putin" width="410" height="406"/>
+    </resources>
+</document>
